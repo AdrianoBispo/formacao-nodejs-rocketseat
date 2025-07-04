@@ -1,1 +1,1 @@
-# fundamentos-do-nodejs-rocketseat
+# Formação Node.js Rocketseat - Fundamentos do Node.js
