@@ -1,5 +1,5 @@
 {
-  "name": "curso02-api-rest",
+  "name": "curso02-api-rest-com-fastify",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
