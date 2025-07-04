@@ -44,6 +44,14 @@ import http from "node:http";
 
 */
 
+/* HTTP - Status Code
+
+  Os códigos de status HTTP são números de três dígitos que indicam o resultado de uma solicitação
+  HTTP. Eles são divididos em cinco classes, cada uma representando um tipo de resposta: informacional
+  (1xx), sucesso (2xx), redirecionamento (3xx), erro do cliente (4xx) e erro do servidor (5xx). 
+
+*/
+
 const users = [];
 
 const server = http.createServer((req, res) => {
@@ -66,10 +74,10 @@ const server = http.createServer((req, res) => {
       email: "johndoe@example.com",
     });
 
-    return res.end("Criação de usuário");
+    return res.writeHead(201).end()
   }
 
-  return res.end("Hellow, World!");
+  return res.writeHead(404).end()
 });
 
 server.listen(3333);
